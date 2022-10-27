@@ -23,7 +23,7 @@ public class Stack<T> implements IStack <T>  {
     } 
 
     @Override
-    public T pop() {
+    public T pop() throws EmptyStackException {
         if (elements.isEmpty()) // if stack is empty
             throw new EmptyStackException("Stack is empty, cannot pop");
 

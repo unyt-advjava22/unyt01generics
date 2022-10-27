@@ -10,8 +10,8 @@ package com.eltonb.textbook.ch20.ex2;
  * @author elton.ballhysa
  */
 
-public interface IStack<T> {    
+public interface IStack<T> {
     public void push(T value);
     public void push(T ... values);
-    public T pop();
+    public T pop() throws EmptyStackException;
 }

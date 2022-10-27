@@ -2,7 +2,7 @@ package com.eltonb.textbook.ch20.ex2;
 
 // Fig. 20.8: EmptyStackException.java
 // EmptyStackException class declaration.
-public class EmptyStackException extends RuntimeException {
+public class EmptyStackException extends Exception {
     // no-argument constructor
     public EmptyStackException() {
         this("Stack is empty");

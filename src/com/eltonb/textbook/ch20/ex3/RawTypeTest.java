@@ -8,7 +8,7 @@ public class RawTypeTest  {
         Integer[] integerElements = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         // Stack of raw types assigned to Stack of raw types variable
-        Stack rawTypeStack1 = new Stack(5); 
+        Stack rawTypeStack1 = new Stack(5);
 
         // Stack<Double> assigned to Stack of raw types variable
         Stack rawTypeStack2 = new Stack<Double>(5);          

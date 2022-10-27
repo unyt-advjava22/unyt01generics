@@ -1,6 +1,6 @@
 package com.eltonb.textbook.ch20.ex1;
 
-public class Student extends Object implements Comparable<Student> {
+public class Student implements Comparable<Student> {
     private int id;
     private String name;
     private String surname;
@@ -42,6 +42,6 @@ public class Student extends Object implements Comparable<Student> {
 
     @Override
     public int compareTo(Student other) {
-        return this.surname.compareTo(other.surname);
+        return this.name.compareTo(other.name);
     }
 }

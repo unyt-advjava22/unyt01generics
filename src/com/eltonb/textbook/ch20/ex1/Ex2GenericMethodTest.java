@@ -16,7 +16,7 @@ public class Ex2GenericMethodTest {
         Integer[] integerArray = {1, 2, 3, 4, 5, 6};
         Double[] doubleArray = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
         Character[] characterArray = {'H', 'E', 'L', 'L', 'O'};
-        Student[] studentArray = {new Student(1, "ADVANCED", "JAVA"), new Student(2, "advanced", "java")};
+        Student[] studentArray = {new Student(1, "John", "Doe"), new Student(2, "Jane", "Doe")};
 
         System.out.print("Array integerArray contains:\n");
         printArray(integerArray); // pass an Integer array 
@@ -29,9 +29,9 @@ public class Ex2GenericMethodTest {
     }
 
     // generic method printArray
-    public static <T> void printArray(T[] inputArray) {
+    public static <Type> void printArray(Type[] inputArray) {
         // display array elements
-        for (T element : inputArray)
+        for (Type element : inputArray)
             System.out.printf("%s ", element);
 
         System.out.println();
